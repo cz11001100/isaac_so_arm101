@@ -20,7 +20,7 @@ from isaaclab_rl.rsl_rl import (
 class LiftCubePPORunnerCfg(RslRlOnPolicyRunnerCfg):
     num_steps_per_env = 24
     max_iterations = 1500
-    save_interval = 50
+    save_interval = 200
     experiment_name = "lift"
     empirical_normalization = False
     policy = RslRlPpoActorCriticCfg(
@@ -43,3 +43,8 @@ class LiftCubePPORunnerCfg(RslRlOnPolicyRunnerCfg):
         desired_kl=0.01,
         max_grad_norm=1.0,
     )
+
+@configclass
+class CameraLiftCubePPORunnerCfg(LiftCubePPORunnerCfg):
+    max_iterations = 4000
+    experiment_name = "camera_lift"
