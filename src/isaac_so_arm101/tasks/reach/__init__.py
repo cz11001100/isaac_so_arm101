@@ -17,7 +17,7 @@ from . import agents
 ##
 
 gym.register(
-    id="Isaac-SO-ARM100-Reach-v0",
+    id="Isaac-So-Arm100-Reach-v0",
     entry_point="isaaclab.envs:ManagerBasedRLEnv",
     kwargs={
         "env_cfg_entry_point": f"{__name__}.joint_pos_env_cfg:SoArm100ReachEnvCfg",
@@ -27,7 +27,7 @@ gym.register(
 )
 
 gym.register(
-    id="Isaac-SO-ARM100-Reach-Play-v0",
+    id="Isaac-So-Arm100-Reach-Play-v0",
     entry_point="isaaclab.envs:ManagerBasedRLEnv",
     kwargs={
         "env_cfg_entry_point": f"{__name__}.joint_pos_env_cfg:SoArm100ReachEnvCfg_PLAY",
@@ -37,7 +37,7 @@ gym.register(
 )
 
 gym.register(
-    id="Isaac-SO-ARM101-Reach-v0",
+    id="Isaac-So-Arm101-Reach-v0",
     entry_point="isaaclab.envs:ManagerBasedRLEnv",
     kwargs={
         "env_cfg_entry_point": f"{__name__}.joint_pos_env_cfg:SoArm101ReachEnvCfg",
@@ -47,7 +47,7 @@ gym.register(
 )
 
 gym.register(
-    id="Isaac-SO-ARM101-Reach-Play-v0",
+    id="Isaac-So-Arm101-Reach-Play-v0",
     entry_point="isaaclab.envs:ManagerBasedRLEnv",
     kwargs={
         "env_cfg_entry_point": f"{__name__}.joint_pos_env_cfg:SoArm101ReachEnvCfg_PLAY",

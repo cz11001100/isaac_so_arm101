@@ -28,6 +28,8 @@ cd isaac_so_arm101
 uv sync
 ```
 
+% uv pip install "setuptools>=60,<70" wheel uv_build
+% uv sync --no-build-isolation
 
 ## Quickstart
 
@@ -40,8 +42,8 @@ uv run list_envs
 Test with dummy agents.
 
 ```bash
-uv run zero_agent --task SO-ARM100-Reach-Play-v0    # send zero actions
-uv run random_agent --task SO-ARM100-Reach-Play-v0  # send random actions
+uv run zero_agent --task Isaac-So-Arm100-Reach-Play-v0    # send zero actions
+uv run random_agent --task Isaac-So-Arm100-Reach-Play-v0  # send random actions
 ```
 
 ## Reaching
@@ -49,13 +51,13 @@ uv run random_agent --task SO-ARM100-Reach-Play-v0  # send random actions
 Train a RL-based IK policy.
 
 ```bash
-uv run train --task SO-ARM100-Reach-v0 --headless
+uv run train --task Isaac-So-Arm100-Reach-v0 --headless
 ```
 
 Evaluate a trained policy.
 
 ```bash
-uv run play --task SO-ARM100-Reach-Play-v0
+uv run play --task Isaac-So-Arm100-Reach-Play-v0
 ```
 
 ## Sim2Real Transfer
