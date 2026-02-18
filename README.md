@@ -28,8 +28,8 @@ cd isaac_so_arm101
 uv sync
 ```
 
-% uv pip install "setuptools>=60,<70" wheel uv_build
-% uv sync --no-build-isolation
+<!-- uv pip install "setuptools>=60,<70" wheel uv_build -->
+<!-- uv sync --no-build-isolation -->
 
 ## Quickstart
 
