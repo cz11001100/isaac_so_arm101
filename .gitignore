@@ -48,6 +48,7 @@ runs/
 recordings/
 **/logs/*
 logs/
+!logs/.gitkeep
 
 # Pre-Trained Checkpoints
 /.pretrained_checkpoints/
