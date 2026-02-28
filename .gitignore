@@ -50,5 +50,6 @@ recordings/
 logs/
 !logs/.gitkeep
 
-# Pre-Trained Checkpoints
-/.pretrained_checkpoints/
+# Pre-Trained Checkpoints - allow specific files
+/.pretrained_checkpoints/*
+!/.pretrained_checkpoints/.gitkeep
